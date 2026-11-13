@@ -1,26 +1,26 @@
 # Mr Mind
 
-I built Mr Mind, a WordPress storefront for digital guides on habits and focus. The site started as a set of static HTML pages and moved to a custom WordPress theme so editors could manage the product catalog and page content from the admin.
+I built [mrmind.co](https://mrmind.co/), a WordPress storefront for digital guides. I took it from a static HTML prototype to a live site with a custom PHP theme, an editable homepage and a structured product catalog.
 
-[Visit the live site](https://mrmind.co/)
+[Visit the live storefront](https://mrmind.co/)
 
-![Mr Mind homepage](homepage.png)
+![Mr Mind homepage showing the navigation and main headline](homepage.png)
 
-## What the project covers
+## What I built
 
-- A custom PHP theme with shared templates for navigation, page layouts and product pages.
-- Custom WordPress content types for products and testimonials, plus a taxonomy for product collections.
-- Version-controlled ACF field definitions for product details, page sections and site settings.
-- CSS and JavaScript carried over from the static prototype, with no page builder required.
+- **An editor-managed homepage.** Editors can reorder sections in WordPress. The theme renders those sections and falls back to the page body or a starter hero when the page has no configured sections.
+- **A catalog for individual guides and bundles.** Products and collections have their own WordPress content types and taxonomy. Editors can set the catalog order and see product type and price in the admin list.
+- **Reusable testimonials.** Testimonials are entered once and can be associated with products. Their field definitions are versioned alongside the theme.
 
-## One design decision
+## Inside the theme
 
-The migration kept the existing CSS and JavaScript while moving repeated page markup into shared WordPress templates. Product content lives in structured fields so editors can update it from WordPress and the theme can render the same fields consistently across the site.
+| Sample | What to look for |
+| --- | --- |
+| [Homepage template](theme/front-page.php) | How structured page sections, editor content and the starter hero are selected. |
+| [Product detail template](theme/single-product.php) | How one template handles individual products and bundles, including related products, testimonials and purchase calls to action. |
+| [Content model](theme/post-types.php) | WordPress hooks for registration, catalog ordering and custom admin columns. |
+| [Testimonial fields](theme/acf-json/group_mm_testimonial.json) | The ACF schema for testimonial content and product relationships. |
 
-## Stack
+The main decision was to keep the existing CSS and JavaScript during the migration and move repeated markup into shared PHP templates. That kept the visual design consistent while giving editors control over content and page structure.
 
-WordPress, PHP, Advanced Custom Fields Pro, HTML, CSS and JavaScript.
-
-## Theme code
-
-[theme/post-types.php](theme/post-types.php) shows how the theme registers products, testimonials and product collections. It also adds type and price columns in WordPress admin and lets editors control the order of products in the catalog. This file is a sample from the theme.
+These samples come from the custom theme and depend on WordPress, ACF Pro and other theme helpers. The live storefront shows the complete implementation.
