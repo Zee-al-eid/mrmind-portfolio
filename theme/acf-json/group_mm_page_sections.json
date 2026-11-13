@@ -1,0 +1,1584 @@
+{
+    "key": "group_mm_page_sections",
+    "title": "Page Sections",
+    "fields": [
+        {
+            "key": "field_mm_page_sections",
+            "label": "Page sections",
+            "name": "page_sections",
+            "type": "flexible_content",
+            "instructions": "Build the page by stacking sections in any order. Every section is locked to the site design.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layouts": {
+                "layout_mm_pg_hero": {
+                    "key": "layout_mm_pg_hero",
+                    "name": "hero",
+                    "label": "Hero",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_hero_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_eyebrow",
+                            "label": "Eyebrow badge",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "Optional gold tag above the headline, e.g. SYSTEMS OVER MOTIVATION.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "SYSTEMS OVER MOTIVATION"
+                        },
+                        {
+                            "key": "field_mm_pg_hero_align",
+                            "label": "Alignment",
+                            "name": "align",
+                            "type": "button_group",
+                            "instructions": "Align the hero section.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Center",
+                                "left": "Left"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_mm_pg_hero_line1",
+                            "label": "Headline — first line",
+                            "name": "headline",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "YOU ARE NOT",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_line2",
+                            "label": "Headline — accent line",
+                            "name": "headline_accent",
+                            "type": "text",
+                            "instructions": "Rendered in gold with a glow. Keep it very short.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "LAZY.",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_sub",
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_cta_label",
+                            "label": "Button label",
+                            "name": "cta_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "The Reset System",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_cta_url",
+                            "label": "Button link",
+                            "name": "cta_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_cta_style",
+                            "label": "Button style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "34",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "solid": "Solid Gold",
+                                "outline": "Outline Gold"
+                            },
+                            "default_value": "solid"
+                        },
+                        {
+                            "key": "field_mm_pg_hero_sec_label",
+                            "label": "Secondary Button label",
+                            "name": "secondary_cta_label",
+                            "type": "text",
+                            "instructions": "Optional second button.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "VIEW FRAMEWORK →"
+                        },
+                        {
+                            "key": "field_mm_pg_hero_sec_url",
+                            "label": "Secondary Button link",
+                            "name": "secondary_cta_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_mm_pg_hero_summary",
+                            "label": "Summary box",
+                            "name": "summary",
+                            "type": "textarea",
+                            "instructions": "Optional highlighted paragraph below the button.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": ""
+                        }
+                    ]
+                },
+                "layout_mm_pg_narrative": {
+                    "key": "layout_mm_pg_narrative",
+                    "name": "narrative",
+                    "label": "Narrative beat",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_nar_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_nar_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_nar_align",
+                            "label": "Alignment",
+                            "name": "align",
+                            "type": "button_group",
+                            "instructions": "Align the section heading and copy (Left, Center, or Right).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "center": "Center",
+                                "right": "Right"
+                            },
+                            "default_value": "left",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_mm_pg_nar_body",
+                            "label": "Body",
+                            "name": "body",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ]
+                },
+                "layout_mm_pg_steps": {
+                    "key": "layout_mm_pg_steps",
+                    "name": "steps",
+                    "label": "Numbered steps",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_steps_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_steps_align",
+                            "label": "Alignment",
+                            "name": "align",
+                            "type": "button_group",
+                            "instructions": "Align the steps section.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Center",
+                                "left": "Left"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_mm_pg_steps_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "The Pattern of Chaos",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_steps_items",
+                            "label": "Steps",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add step",
+                            "sub_fields": [
+                                {
+                                    "key": "field_mm_pg_steps_item_text",
+                                    "label": "Step",
+                                    "name": "text",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "layout_mm_pg_rich_text": {
+                    "key": "layout_mm_pg_rich_text",
+                    "name": "rich_text",
+                    "label": "Rich text",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_rt_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_rt_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_rt_align",
+                            "label": "Alignment",
+                            "name": "align",
+                            "type": "button_group",
+                            "instructions": "Align the section heading and copy (Left, Center, or Right).",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "left": "Left",
+                                "center": "Center",
+                                "right": "Right"
+                            },
+                            "default_value": "left",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_mm_pg_rt_body",
+                            "label": "Body",
+                            "name": "body",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ]
+                },
+                "layout_mm_pg_product_showcase": {
+                    "key": "layout_mm_pg_product_showcase",
+                    "name": "product_showcase",
+                    "label": "Product showcase",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_ps_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_ps_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "The Transformation Journey",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_ps_lede",
+                            "label": "Intro text",
+                            "name": "lede",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_ps_limit",
+                            "label": "How many products",
+                            "name": "limit",
+                            "type": "number",
+                            "instructions": "Leave blank to show all, ordered by the Products drag-order.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "min": 1,
+                            "max": "",
+                            "step": 1,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                "layout_mm_pg_testimonials": {
+                    "key": "layout_mm_pg_testimonials",
+                    "name": "testimonials",
+                    "label": "Testimonial grid",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_tg_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_tg_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "What People Are Saying",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_tg_lede",
+                            "label": "Intro text",
+                            "name": "lede",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_tg_limit",
+                            "label": "How many",
+                            "name": "limit",
+                            "type": "number",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": 3,
+                            "min": 1,
+                            "max": "",
+                            "step": 1,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                "layout_mm_pg_bundle_cta": {
+                    "key": "layout_mm_pg_bundle_cta",
+                    "name": "bundle_cta",
+                    "label": "Bundle / offer CTA",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_bc_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_bc_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "THE RESET SYSTEM",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_bc_lede",
+                            "label": "Intro text",
+                            "name": "lede",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_bc_product",
+                            "label": "Product",
+                            "name": "product",
+                            "type": "relationship",
+                            "instructions": "Pricing, contents and the checkout link are pulled from this product.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "product"
+                            ],
+                            "post_status": "",
+                            "taxonomy": "",
+                            "filters": [
+                                "search"
+                            ],
+                            "return_format": "object",
+                            "min": "",
+                            "max": 1,
+                            "elements": "",
+                            "bidirectional": 0,
+                            "bidirectional_target": []
+                        },
+                        {
+                            "key": "field_mm_pg_bc_image",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_mm_pg_bc_cta_label",
+                            "label": "Button label",
+                            "name": "cta_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "SECURE THE BUNDLE",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ]
+                },
+                "layout_mm_pg_faq": {
+                    "key": "layout_mm_pg_faq",
+                    "name": "faq",
+                    "label": "FAQ",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_faq_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_faq_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Questions",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_faq_items",
+                            "label": "Questions",
+                            "name": "items",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "row",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "field_mm_pg_faq_q",
+                            "button_label": "Add question",
+                            "sub_fields": [
+                                {
+                                    "key": "field_mm_pg_faq_q",
+                                    "label": "Question",
+                                    "name": "question",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                },
+                                {
+                                    "key": "field_mm_pg_faq_a",
+                                    "label": "Answer",
+                                    "name": "answer",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "rows": 4,
+                                    "placeholder": "",
+                                    "new_lines": "wpautop"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "layout_mm_pg_cta_band": {
+                    "key": "layout_mm_pg_cta_band",
+                    "name": "cta_band",
+                    "label": "CTA band",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_cb_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "Optional large faded word behind the section. One short word, uppercase.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "FOCUS",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_cb_align",
+                            "label": "Alignment",
+                            "name": "align",
+                            "type": "button_group",
+                            "instructions": "Align the CTA band content.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Center",
+                                "left": "Left"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_mm_pg_cb_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_cb_lede",
+                            "label": "Intro text",
+                            "name": "lede",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 2,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_cb_label",
+                            "label": "Button label",
+                            "name": "cta_label",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_cb_url",
+                            "label": "Button link",
+                            "name": "cta_url",
+                            "type": "url",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "33",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_mm_pg_cb_cta_style",
+                            "label": "Button style",
+                            "name": "cta_style",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "34",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "solid": "Solid Gold",
+                                "outline": "Outline Gold"
+                            },
+                            "default_value": "solid"
+                        }
+                    ]
+                },
+                "layout_mm_pg_founder": {
+                    "key": "layout_mm_pg_founder",
+                    "name": "founder",
+                    "label": "Founder",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_founder_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "VISION",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_founder_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "The Founder",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_founder_photo",
+                            "label": "Photo",
+                            "name": "photo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_mm_pg_founder_name",
+                            "label": "Name & title",
+                            "name": "name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "Joseph Pfiffner, Founder",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_founder_bio",
+                            "label": "Bio",
+                            "name": "bio",
+                            "type": "wysiwyg",
+                            "instructions": "A few short paragraphs. Social links are pulled from Site Settings automatically.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ]
+                },
+                "layout_mm_pg_quote": {
+                    "key": "layout_mm_pg_quote",
+                    "name": "quote",
+                    "label": "Standout quote",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_quote_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "VISION",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_quote_align",
+                            "label": "Alignment",
+                            "name": "align",
+                            "type": "button_group",
+                            "instructions": "Align the quote section.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "center": "Center",
+                                "left": "Left"
+                            },
+                            "default_value": "center",
+                            "return_format": "value",
+                            "layout": "horizontal"
+                        },
+                        {
+                            "key": "field_mm_pg_quote_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "The Standard",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_quote_text",
+                            "label": "Quote",
+                            "name": "quote",
+                            "type": "textarea",
+                            "instructions": "The large highlighted quote. Do not add surrounding quote marks — the design adds them.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 3,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_quote_author",
+                            "label": "Author / Citation",
+                            "name": "author",
+                            "type": "text",
+                            "instructions": "Optional attribution line below the quote, e.g. — Joseph Pfiffner, Founder.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "— Joseph Pfiffner, Founder"
+                        }
+                    ]
+                },
+                "layout_mm_pg_legal": {
+                    "key": "layout_mm_pg_legal",
+                    "name": "legal",
+                    "label": "Legal document",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_legal_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "PRIVACY",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_legal_title",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "Privacy Policy",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_legal_meta",
+                            "label": "Last updated",
+                            "name": "meta",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "Last updated: 22 July 2026",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_legal_body",
+                            "label": "Body",
+                            "name": "body",
+                            "type": "wysiwyg",
+                            "instructions": "The full policy. Long documents can be pasted here; the design styles headings and lists automatically.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ]
+                },
+                "layout_mm_pg_contact": {
+                    "key": "layout_mm_pg_contact",
+                    "name": "contact",
+                    "label": "Contact",
+                    "display": "block",
+                    "min": "",
+                    "max": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_mm_pg_contact_bgtext",
+                            "label": "Background watermark",
+                            "name": "bg_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": 24,
+                            "placeholder": "CONNECT",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_contact_eyebrow",
+                            "label": "Eyebrow",
+                            "name": "eyebrow",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "We're Listening",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_contact_heading",
+                            "label": "Heading",
+                            "name": "heading",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Contact Us",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_contact_intro",
+                            "label": "Intro",
+                            "name": "intro",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": 4,
+                            "placeholder": "",
+                            "new_lines": ""
+                        },
+                        {
+                            "key": "field_mm_pg_contact_email",
+                            "label": "Contact email",
+                            "name": "email",
+                            "type": "email",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "systems@mrmind.com"
+                        },
+                        {
+                            "key": "field_mm_pg_contact_response",
+                            "label": "Response time",
+                            "name": "response_time",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "Within 48 hours, Mon–Fri",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_mm_pg_contact_topics",
+                            "label": "Message topics",
+                            "name": "topics",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "table",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add topic",
+                            "sub_fields": [
+                                {
+                                    "key": "field_mm_pg_contact_topic_label",
+                                    "label": "Topic",
+                                    "name": "label",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 1,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": ""
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add section"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "Reorderable, on-brand section library for Pages (home, about, legal, landing pages).",
+    "show_in_rest": 0
+}
